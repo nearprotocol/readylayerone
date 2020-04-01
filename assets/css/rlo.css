@@ -1,0 +1,50 @@
+/* purgecss start ignore */
+
+@font-face {
+	src: url('../webfonts/RationalTWDisplay-Medium/font.eot');
+	font-weight: medium;
+	font-style: normal;
+	font-family: 'Rational TW Display';
+	src: url('../webfonts/RationalTWDisplay-Medium/font.woff2') format('woff2'),
+		url('../webfonts/RationalTWDisplay-Medium/font.woff') format('woff'),
+		url('../webfonts/RationalTWDisplay-Medium/font.eot?#iefix') format('embedded-opentype'),
+		url('../webfonts/RationalTWDisplay-Medium/font.ttf') format('truetype');
+}
+
+@font-face {
+	src: url('../webfonts/Rational-Medium/font.eot');
+	font-weight: medium;
+	font-style: normal;
+	font-family: 'Rational';
+	src: url('../webfonts/Rational-Medium/font.woff2') format('woff2'),
+		url('../webfonts/Rational-Medium/font.woff') format('woff'),
+		url('../webfonts/Rational-Medium/font.eot?#iefix') format('embedded-opentype'),
+		url('../webfonts/Rational-Medium/font.ttf') format('truetype');
+}
+
+@tailwind base;
+
+* {
+	@apply m-0 p-0;
+}
+
+svg, img {
+	@apply locked;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	@apply font-secondary;
+}
+
+a {
+	@apply duration-300;
+}
+
+/* purgecss end ignore */
+
+@tailwind utilities;
+
+.locked {
+	user-select: none;
+	pointer-events: none;
+}
