@@ -124,6 +124,24 @@ a:not(.unglitch):hover::after {
 	100% { transform: skew(-3deg); }
 }
 
+.sidebar {
+	background: url('../img/glitch-sm.png') right 12% / 80% no-repeat,
+		url('../img/glitch-sm.png') right 34% / 80% no-repeat,
+		url('../img/glitch-sm.png') right 60% / 80% no-repeat
+}
+
+.main {
+	background: url('../img/glitch-vert.png') 5% 50% no-repeat;
+}
+
+@screen lg {
+	.main { background-position-x: 15%; }
+}
+
+@screen xl {
+	.main { background-position-x: 20%; }
+}
+
 /* purgecss end ignore */
 
 @tailwind utilities;
