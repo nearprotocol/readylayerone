@@ -8,18 +8,18 @@ function css() {
 			require('tailwindcss')('tailwind.config.js'),
 			require('autoprefixer'),
 		]))
-		// .pipe(require('gulp-purgecss')({
-		// 	content: [
-		// 		'index.html',
-		// 		'assets/dist/rlo.min.js',
-		// 	],
-		// 	defaultExtractor: function(content) {
-		// 		return content.match(/[\w-/:]+(?<!:)/g) || [];
-		// 	},
-		// }))
-		// .pipe(postcss([
-		// 	require('postcss-clean'),
-		// ]))
+		.pipe(require('gulp-purgecss')({
+			content: [
+				'index.html',
+				'assets/dist/rlo.min.js',
+			],
+			defaultExtractor: function(content) {
+				return content.match(/[\w-/:]+(?<!:)/g) || [];
+			},
+		}))
+		.pipe(postcss([
+			require('postcss-clean'),
+		]))
 		.pipe(require('gulp-rename')({ suffix: '.min' }))
 		.pipe(gulp.dest('assets/css'));
 }

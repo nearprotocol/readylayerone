@@ -136,8 +136,20 @@ a:not(.unglitch):hover::after {
 		url('../img/glitch-sm.png') right 60% / 80% no-repeat
 }
 
-.main {
-	background: url('../img/glitch-vert.png') 5% 50% no-repeat;
+.main::before {
+	content: '';
+	@apply absolute;
+	left: -100px;
+	top: 70px;
+	width: 120px;
+	height: 299px;
+	background-image: url('../img/glitch-vert.png');
+}
+
+@screen md {
+	.main::before {
+		left: -80px;
+	}
 }
 
 @screen lg {
