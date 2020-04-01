@@ -648,12 +648,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Rational, sans-serif;
 }
 
+.group:hover .group-hover\:glitch,
+.glitch:hover,
 a:not(.unglitch):hover {
   position: relative;
   color: #fe09ff;
   animation: glitch-skew 1s infinite linear alternate-reverse;
 }
 
+.group:hover .group-hover\:glitch::before,
+.glitch:hover::before,
 a:not(.unglitch):hover::before {
   position: absolute;
   top: 0;
@@ -667,6 +671,8 @@ a:not(.unglitch):hover::before {
   animation: glitch-anim 1s infinite linear alternate-reverse;
 }
 
+.group:hover .group-hover\:glitch::after,
+.glitch:hover::after,
 a:not(.unglitch):hover::after {
   position: absolute;
   top: 0;

@@ -1,6 +1,6 @@
 (function() {
 
-	document.querySelectorAll('a').forEach(function(link) {
+	document.querySelectorAll('a, .glitch').forEach(function(link) {
 		link.dataset.text = link.innerText;
 	});
 

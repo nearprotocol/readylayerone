@@ -40,11 +40,15 @@ h1, h2, h3, h4, h5, h6 {
 	@apply font-secondary;
 }
 
+.group:hover .group-hover\:glitch,
+.glitch:hover,
 a:not(.unglitch):hover {
 	@apply relative text-pink;
 	animation: glitch-skew 1s infinite linear alternate-reverse;
 }
 
+.group:hover .group-hover\:glitch::before,
+.glitch:hover::before,
 a:not(.unglitch):hover::before {
 	@apply absolute top-0 w-full h-full text-right;
 	right: 1px;
@@ -54,6 +58,8 @@ a:not(.unglitch):hover::before {
 	animation: glitch-anim 1s infinite linear alternate-reverse;
 }
 
+.group:hover .group-hover\:glitch::after,
+.glitch:hover::after,
 a:not(.unglitch):hover::after {
 	@apply absolute top-0 w-full h-full text-right;
 	right: 1px;
