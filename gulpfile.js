@@ -10,7 +10,7 @@ function css() {
 		]))
 		.pipe(require('gulp-purgecss')({
 			content: [
-				'index.html',
+				'**/*.html',
 				'assets/dist/rlo.min.js',
 			],
 			defaultExtractor: function(content) {
@@ -25,7 +25,7 @@ function css() {
 }
 
 function watch() {
-	gulp.watch(['assets/css/rlo.css', 'assets/js/rlo.js', 'tailwind.config.js', 'index.html'], gulp.series(css));
+	gulp.watch(['assets/css/rlo.css', 'assets/js/rlo.js', 'tailwind.config.js', '**/*.html'], gulp.series(css));
 }
 
 exports.css = css;
