@@ -28,6 +28,7 @@ module.exports = {
         letterSpacing: {
             widest: '.25em'
         },
+
 	},
 	variants: {
 		backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'],
