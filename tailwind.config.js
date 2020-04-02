@@ -25,6 +25,9 @@ module.exports = {
 			'brown': '#635c50',
 			'brown-light': '#d1ccbd',
 		},
+        letterSpacing: {
+            widest: '.25em'
+        }
 	},
 	variants: {
 		backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'],
