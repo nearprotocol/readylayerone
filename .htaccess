@@ -1,4 +1,4 @@
 AuthName "ReadyLayerOne Preview"
-AuthUserFile /path/to/password/file/.htpasswd
+AuthUserFile .htpasswd
 AuthType Basic
 require valid-user
