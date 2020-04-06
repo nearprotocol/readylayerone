@@ -26,7 +26,7 @@ module.exports = {
 			'brown-light': '#d1ccbd',
 		},
         letterSpacing: {
-            widest: '.25em'
+            widest: '.2em'
         },
 
 	},
