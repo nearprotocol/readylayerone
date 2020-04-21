@@ -4,9 +4,6 @@ module.exports = {
 			maxWidth: {
 				'screen-1/2': '50vw',
 			},
-            width: {
-                '1/2': '45%'
-            }
 		},
 		fontFamily: {
 			'primary': '"Rational TW Display", sans-serif',
